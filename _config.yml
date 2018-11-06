@@ -59,4 +59,3 @@ _options:
     resize_style: "contain"
     mime_type: "image/jpeg"
     expandable: true
-theme: jekyll-theme-midnight
