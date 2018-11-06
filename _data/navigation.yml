@@ -1,6 +1,2 @@
-- name: Home
-  link: /
-- name: About
+- name: "&#9432;"  # info symbol
   link: /about/
-- name: Hire me
-  link: /contact/
