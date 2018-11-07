@@ -2,8 +2,8 @@
 # Site
 
 title: DarkCortex portfolio
-url: "https://cosmic-hippopotamus.cloudvent.net"
-baseurl:
+url: "https://iamdarkcortex.com"
+baseurl: "https://pithikos.github.io/darkcortex"
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
@@ -11,12 +11,12 @@ logo: /siteicon.png
 description: Photography portfolio template for Jekyll.
 author:
   name:
-  email:
+  email: iamdarkcortex@gmail.com
   twitter: # twitter username without the @ symbol
 social:
-  name: Aperture Template
+  name: darkcortex
   links:
-    - https://github.com/CloudCannon/aperture-jekyll-template
+    - https://iamdarkcortex.com
 
 # -----
 # Build
