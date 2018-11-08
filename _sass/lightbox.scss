@@ -1,5 +1,7 @@
 .overlay {
 	position: fixed;
+	height: 100%;
+	width: 100%;
 	top: 0;
 	right: 0;
 	bottom: -1px;
@@ -38,10 +40,19 @@
 		right: $offset;
 	}
 
+	.image-wrapper {
+		height: 100%;
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
 	img {
 		margin: 0 auto;
-		display: block;
+		display: inline-block;
 		max-height: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -52,6 +63,6 @@
 body.overlay-active {
 	overflow: hidden;
 	.overlay {
-		display: block;
+		display: table;
 	}
 }
