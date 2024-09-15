@@ -19,6 +19,13 @@ Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
     bundle exec jekyll serve
 
+
+## Ubuntu 24.04
+
+1. Install ruby2.7 using rbenv.
+2. Follow Develop guide
+
+
 ## Editing
 
 Aperture is already optimised for adding, updating and removing photos and navigation in CloudCannon.
