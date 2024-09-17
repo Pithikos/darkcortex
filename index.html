@@ -1,29 +1,126 @@
 ---
 title:
+
+
 photos:
-  - image: /uploads/DSC00687-1_resized.jpg
-    caption:
-  #- image: /uploads/DSC03885-19.jpg
-  #  caption:
-  - image: /uploads/DSC03483-3 - Solace.jpg
-    caption:
-  - image: /uploads/DSC06174-3_edit_resized.jpg
+  - image: /uploads/white.png
     caption:
   - image: /uploads/DSC06523-2_resized.jpg
     caption:
-  - image: /uploads/DSC03417_resized.jpg
+  - image: /uploads/DSC03454_edit_2.jpg
     caption:
   - image: /uploads/city.png
     caption:
-  - image: /uploads/digital.png
+  - image: /uploads/DSC07214.JPG
     caption:
-  #- image: /uploads/DSC07076-2_resized.jpg
-  #  caption:
-  - image: /uploads/DSC02561-1_resized.jpg
-    caption:
-  - image: /uploads/white.png
+  - image: /uploads/DSC02850_edit_luminance..jpg
     caption:
   - image: /uploads/DSC04195-38.jpg
+    caption:
+  - image: /uploads/skin.jpg
+    caption:
+  - image: /uploads/forest.jpg
+    caption:
+  - image: /uploads/ether.jpg
+    caption:
+  - image: /uploads/underneath.jpg
+    caption:
+  - image: /uploads/portrait.jpg
+    caption:
+  - image: /uploads/foggy_night.jpg
+    caption:
+  - image: /uploads/DSC03483-3 - Solace.jpg
+    caption:
+  - image: /uploads/mirage.png
+    caption:
+  - image: /uploads/DSC00508_edit_noeyes2.jpg
+    caption:
+  - image: /uploads/DSC02993_lighten.jpg
+    caption:
+  - image: /uploads/DSC01923.-1.jpg
+    caption:
+  - image: /uploads/DSC07825.jpg
+    caption:
+  - image: /uploads/posh.jpg
+    caption:
+  - image: /uploads/siluette.jpg
+    caption:
+  - image: /uploads/DSC05309-2.jpg
+    caption:
+  - image: /uploads/DSC03553-7 - Faceless men.jpg
+    caption:
+  - image: /uploads/shell.jpg
+    caption:
+  - image: /uploads/eye.jpg
+    caption:
+
+
+photos_fine_art:  
+  - image: /uploads/white.png
+    caption:
+  - image: /uploads/DSC06523-2_resized.jpg
+    caption:
+  - image: /uploads/DSC03454_edit_2.jpg
+    caption:
+  - image: /uploads/city.png
+    caption:
+  - image: /uploads/DSC07214.JPG
+    caption:
+  - image: /uploads/DSC02850_edit_luminance..jpg
+    caption:
+  - image: /uploads/DSC04195-38.jpg
+    caption:
+  - image: /uploads/skin.jpg
+    caption:
+  - image: /uploads/forest.jpg
+    caption:
+  - image: /uploads/ether.jpg
+    caption:
+  - image: /uploads/underneath.jpg
+    caption:
+  - image: /uploads/portrait.jpg
+    caption:
+  - image: /uploads/foggy_night.jpg
+    caption:
+  - image: /uploads/DSC03483-3 - Solace.jpg
+    caption:
+  - image: /uploads/mirage.png
+    caption:
+  - image: /uploads/DSC00508_edit_noeyes2.jpg
+    caption:
+  - image: /uploads/DSC02993_lighten.jpg
+    caption:
+  - image: /uploads/DSC01923.-1.jpg
+    caption:
+  - image: /uploads/DSC07825.jpg
+    caption:
+  - image: /uploads/posh.jpg
+    caption:
+  - image: /uploads/siluette.jpg
+    caption:
+  - image: /uploads/DSC05309-2.jpg
+    caption:
+  - image: /uploads/DSC03553-7 - Faceless men.jpg
+    caption:
+  - image: /uploads/shell.jpg
+    caption:
+  - image: /uploads/eye.jpg
+    caption:
+
+photos_cinematic:
+  - image: /uploads/DSC07043.jpg
+    caption:
+  - image: /uploads/DSC03553-7 - Faceless men.jpg
+    caption:
+  - image: /uploads/DSC00687-1_resized.jpg
+    caption:
+  - image: /uploads/DSC02561-1_resized.jpg
+    caption:
+  - image: /uploads/DSC06174-3_edit_resized.jpg
+    caption:
+  - image: /uploads/DSC03417_resized.jpg
+    caption:
+  - image: /uploads/DSC03001.-3.jpg
     caption:
   - image: /uploads/DSC02779_resized.JPG
     caption:
@@ -35,18 +132,44 @@ photos:
     caption:
   - image: /uploads/DSC09849-7_resized.jpg
     caption:
-  - image: /uploads/mirage.png
-    caption:
-  - image: /uploads/DSC02993.-4.jpg
-    caption:
+
 
 
 ---
 
+
+<br>
+<br>
+
+<h2>Fine art</h2>
 <ul class="gallery">
-	{% for photo in page.photos %}
+	{% for photo in page.photos_fine_art %}
 		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
 	{% endfor %}
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+</ul>
+
+<br>
+<br>
+<br>
+
+
+<h2>Cinematic</h2>
+<ul class="gallery">
+  {% for photo in page.photos_cinematic %}
+    <li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
+  {% endfor %}
 	<li class="spacer"></li>
 	<li class="spacer"></li>
 	<li class="spacer"></li>
