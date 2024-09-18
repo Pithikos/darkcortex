@@ -1,8 +1,8 @@
 ---
 title:
 
-
-photos:
+# sarca: A barrier within or with its surrounding
+sarca:
   - image: /uploads/white.png
     caption:
   - image: /uploads/DSC06523-2_resized.jpg
@@ -13,6 +13,9 @@ photos:
     caption:
   - image: /uploads/DSC07214.JPG
     caption:
+
+# demoux: A transition where the barrier is crossed, revealed or transformed
+demoux:
   - image: /uploads/DSC02850_edit_luminance..jpg
     caption:
   - image: /uploads/DSC04195-38.jpg
@@ -21,9 +24,16 @@ photos:
     caption:
   - image: /uploads/forest.jpg
     caption:
-  - image: /uploads/ether.jpg
+  - image: /uploads/shell.jpg
     caption:
   - image: /uploads/underneath.jpg
+    caption:
+  - image: /uploads/DSC00508_edit_noeyes2.jpg
+    caption:
+
+# plexus: An observation of the barrier and its surroundings
+plexus:
+  - image: /uploads/ether.jpg
     caption:
   - image: /uploads/portrait.jpg
     caption:
@@ -33,15 +43,16 @@ photos:
     caption:
   - image: /uploads/mirage.png
     caption:
-  - image: /uploads/DSC00508_edit_noeyes2.jpg
-    caption:
   - image: /uploads/DSC02993_lighten.jpg
     caption:
+  - image: /uploads/posh.jpg
+    caption:
+
+# delores: A final state of a being or a limbo
+delores:
   - image: /uploads/DSC01923.-1.jpg
     caption:
   - image: /uploads/DSC07825.jpg
-    caption:
-  - image: /uploads/posh.jpg
     caption:
   - image: /uploads/siluette.jpg
     caption:
@@ -49,9 +60,9 @@ photos:
     caption:
   - image: /uploads/DSC03553-7 - Faceless men.jpg
     caption:
-  - image: /uploads/shell.jpg
-    caption:
   - image: /uploads/eye.jpg
+    caption:
+  - image: /uploads/seaside.jpg
     caption:
 
 
@@ -134,14 +145,98 @@ photos_cinematic:
     caption:
 
 
-
 ---
 
 
 <br>
 <br>
 
-<h2>Fine art</h2>
+<!-- <h2>S4rc4</h2>
+<ul class="gallery">
+  {% for photo in page.sarca %}
+    <li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
+  {% endfor %}
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+</ul> -->
+
+
+
+<!-- <h2>D3m0ux</h2>
+<ul class="gallery">
+  {% for photo in page.demoux %}
+    <li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
+  {% endfor %}
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+</ul> -->
+
+
+
+<!-- <h2>Pl3xus</h2>
+<ul class="gallery">
+  {% for photo in page.plexus %}
+    <li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
+  {% endfor %}
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+</ul> -->
+
+
+<!-- <h2>D3l0r3s</h2>
+<ul class="gallery">
+  {% for photo in page.delores %}
+    <li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
+  {% endfor %}
+  <li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+	<li class="spacer"></li>
+</ul> -->
+
+
+<!-- <br>
+<br> -->
+
+<!-- <h2>Fine art</h2> -->
 <ul class="gallery">
 	{% for photo in page.photos_fine_art %}
 		<li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
@@ -160,12 +255,12 @@ photos_cinematic:
 	<li class="spacer"></li>
 </ul>
 
+<!-- <br>
 <br>
-<br>
-<br>
+<br> -->
 
 
-<h2>Cinematic</h2>
+<!-- <h2>Cinematic</h2>
 <ul class="gallery">
   {% for photo in page.photos_cinematic %}
     <li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: "800x800>" }}')"><a title="{{ photo.caption }}" href="{{ site.baseurl }}{{ photo.image }}" data-id="#{{ photo.image | slugify }}" data-caption="{{ photo.caption }}"></a></li>
@@ -182,7 +277,7 @@ photos_cinematic:
 	<li class="spacer"></li>
 	<li class="spacer"></li>
 	<li class="spacer"></li>
-</ul>
+</ul> -->
 
 <div class="overlay">
 	<a href="#" class="close">&#10005;</a>
