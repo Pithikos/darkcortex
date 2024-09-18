@@ -5,7 +5,8 @@
 for file in ./uploads/*.{png,jpg,JPG}; do
     new_basename=$(md5sum "$file" | cut -d ' ' -f 1)
     file_extension="${file##*.}"
-    new_filename="$new_basename.$file_extension"
+    file_extension_lower=$(echo "$file_extension" | tr '[:upper:]' '[:lower:]')
+    new_filename="$new_basename.$file_extension_lower"
 
     # Replace all index.html with pattern "/uploads/<filename>"
     old_filename=$(basename "$file")
